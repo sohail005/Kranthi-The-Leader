@@ -77,7 +77,7 @@ export default function About() {
           <TableOfContents structure={structure} about={about} />
         </Column>
       )}
-      <Row fillWidth s={{ direction: "column"}} horizontal="center">
+      <Row fillWidth s={{ direction: "column" }} horizontal="center">
         {about.avatar.display && (
           <Column
             className={styles.avatar}
@@ -135,7 +135,7 @@ export default function About() {
                 <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
                 <Row paddingX="8">Schedule a call</Row>
                 <IconButton
-                  href={about.calendar.link}
+                  // href={about.calendar.link}
                   data-border="rounded"
                   variant="secondary"
                   icon="chevronRight"

@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  firstName: "Kranthi",
+  lastName: "Kumar",
+  name: `Kranthi The Leader`,
+  role: "System Engineer",
+  avatar: "/images/avatar.png",
+  email: "Keranthi@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Telugu", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,17 +24,17 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/kranthi-kumar-3b4b621ba/",
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@kranthi078?xmt=AQF0yyWEBFeNBLw52btgssqzoV-6cWIu6sx4KEX5_YwBhx4",
   },
   {
     name: "Email",
@@ -49,30 +49,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Politician - I believe that POLITICS should only change the feature of this.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">KRANTHI</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/collaborations",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Kranthi, a System Engineer at Revalsys Technologies PVT LTD{" "}
+      <br />with a passion for technology and problem-solving.
     </>
   ),
 };
@@ -98,9 +92,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Kranthi is a dedicated System Engineer at Revalsys Technologies, known for his strong technical expertise and problem-solving skills. He plays a key role in managing and optimizing IT systems, ensuring smooth operations, security, and performance across projects. Kranthi is passionate about leveraging technology to improve efficiency and deliver reliable solutions that support the company’s goals.
       </>
     ),
   },
@@ -109,45 +101,30 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
+        company: "Revalsys Technologies PVT LTD.",
         timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        role: "Senior System Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Spearheaded a server migration project that improved deployment efficiency and reduced maintenance costs by 30%.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Automated routine monitoring tasks using scripting, which increased operational efficiency and reduced manual workload.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Consistently recognized for delivering reliable, high-quality technical support and system optimization.
           </>,
         ],
-        images: [],
-      },
+        // images: [
+        //   // optional: leave the array empty if you don't want to display images
+        //   {
+        //     src: "/images/projects/project-01/cover-01.jpg",
+        //     alt: "Project",
+        //     width: 16,
+        //     height: 9,
+        //   },
+        // ],
+      }
     ],
   },
   studies: {
@@ -155,12 +132,8 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Osmania University Hyderabad",
+        description: <>Bachelor of Technology (B.Tech) in Computer Science and Engineering</>,
       },
     ],
   },
@@ -169,53 +142,35 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Sysytem Administration",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Operating Systems: Windows Server, Linux (Ubuntu, CentOS), macOS</>,
+          <>Server Management: Active Directory, DNS, DHCP, IIS, Apache, Nginx</>,
+          <>Cloud Platforms: AWS, Microsoft Azure, Google Cloud</>,
+          <>Networking: LAN / WAN setup, VPN configuration, Firewall management, Network troubleshooting</>,
+          <>Virtualization: VMware, Hyper- V, Docker</>,
+          <>Monitoring Tools: Nagios, Zabbix, Grafana, CloudWatch</>,
+          <>Automation & Scripting: PowerShell, Bash, Python(basic automation scripts)</>,
+          <>Version Control & CI / CD: Git, Jenkins, GitHub Actions</>,
+          <>Database Management: MySQL, PostgreSQL, MS SQL Server</>,
+          <>Security: SSL / TLS configuration, Firewall & Endpoint Protection, Patch Management</>,
+          <>Backup & Recovery: Veeam, Acronis, Windows Backup Solutions</>,
+          <>IT Support Tools: ServiceNow, Jira, Remote Desktop Services</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "System Administration",
+            icon: "OS",
           },
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
+            src: "/images/projects/project-01/image-02.webp",
             alt: "Project image",
             width: 16,
             height: 9,
           },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
           {
             src: "/images/projects/project-01/cover-04.jpg",
             alt: "Project image",
@@ -223,7 +178,40 @@ const about: About = {
             height: 9,
           },
         ],
-      },  
+      },
+      {
+        title: "Key Skills & Tech Stack",
+        description: (
+          <>Installation, configuration, and maintenance of Windows Server and Linux (Ubuntu, CentOS) environments.</>
+        ),
+        tags: [
+          {
+            name: "Server & Infrastructure Management",
+            icon: "check",
+          },
+          {
+            name: "Cloud & Virtualization",
+            icon: "check",
+          },
+          {
+            name: "CI/CD & Version Control",
+            icon: "check",
+          },
+          {
+            name: "Backup & Disaster Recovery",
+            icon: "check",
+          },
+        ],
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/image-04.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
     ],
   },
 };
